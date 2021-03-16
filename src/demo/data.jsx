@@ -8,7 +8,7 @@ export default [
         children : [
             {
                 text : '二级菜单-1'
-            },
+            },  
             {
                 text : '二级菜单-2'
             },
