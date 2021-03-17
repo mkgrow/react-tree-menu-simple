@@ -8,9 +8,9 @@ npm start
 
 ### 使用
 ```
- npm install react-tree
+ npm install react-tree-menu-simple
  
- import Tree from 'react-tree'
+ import Tree from 'react-tree-menu-simple'
  
  <Tree className='' data={data} onSelect={() => {}} />
 
