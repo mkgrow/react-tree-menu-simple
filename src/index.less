@@ -1,39 +1,45 @@
 @padding-lg: 24px;
 @padding-md: 16px;
 @padding-xss: 4px;
+@margin-md: 16px;
 @margin-xss: 4px;
 
-@icon-size-md: 12px;
+@icon-size-md: 16px;
 
 @blue: #3365F9;
 
 .tree {
   padding: @padding-md @padding-lg;
   background-color: white;
+}
 
-  .children {
-    margin-left: 20px;
+.children {
+  margin-left: @margin-md;
 
-    &:first-child {
-      margin-left: 0;
-    }
-
-    .child {
-      display: flex;
-      align-items: center;
-    }
-
-    .text {
-      margin-left: @margin-xss + 2;
-      padding: @padding-xss + 2 0;
-
-      &.brandColor {
-        color: @blue;
-      }
-    }
-
-    .icon {
-      width: @icon-size-md;
-    }
+  &:first-child {
+    margin-left: 0;
   }
+
+  .child {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.icon {
+  width: @icon-size-md;
+
+  img {
+    width: 100%;
+  }
+}
+
+.text {
+  margin-left: @margin-xss + 2;
+  padding: @padding-xss + 2 0;
+  color: #333;
+}
+
+.selected {
+  color: @blue;
 }
