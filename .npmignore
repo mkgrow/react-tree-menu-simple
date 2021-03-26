@@ -1,0 +1,6 @@
+src/.umi/
+src/demo/
+.DS_Store
+config
+.idea
+dist
