@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import plus from './assets/plus.svg';
 import minus from './assets/minus.svg';
 
-
 import styles from './index.less';
 
 const Children = ({ data = [], selectedMenu, onChange, icons = [], iconClassName = '', valueClassName = '', dropdownClassName = '', selectedClassName }) => {
@@ -25,7 +24,7 @@ const Children = ({ data = [], selectedMenu, onChange, icons = [], iconClassName
           const hasChildren = it?.children?.length;
 
           return (
-            <div key={`${it?.text}-${index}`}>
+            <div key={`${it?.value}-${index}`}>
               <div className={styles.child} onClick={() => handleParentClick(it)}>
                 <div className={`${styles.icon} ${iconClassName}`}>
                   {hasChildren && isParentSelected && <img src={icons?.[0] ?? minus} alt=""/>}
