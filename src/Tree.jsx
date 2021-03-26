@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import plus from './assets/plus.svg';
 import minus from './assets/minus.svg';
 
-import styles from './index.less';
+import styles from './Tree.less';
 
 const Children = ({ data = [], selectedMenu, onChange, icons = [], iconClassName = '', valueClassName = '', dropdownClassName = '', selectedClassName }) => {
   const [parent, setParent] = useState();
