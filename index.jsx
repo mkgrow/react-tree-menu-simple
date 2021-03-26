@@ -1,3 +1,3 @@
-import Tree from './src/';
+import Tree from './src/Tree';
 
 export default Tree;
